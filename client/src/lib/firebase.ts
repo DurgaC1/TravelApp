@@ -3,13 +3,13 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 import { getFirestore } from "firebase/firestore";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDhDLoMkVeKzLLLOEz6pYTvbzkgfkR69Mo",
-  authDomain: "aitravel-f830d.firebaseapp.com",
-  projectId: "aitravel-f830d",
-  storageBucket: "aitravel-f830d.firebasestorage.app",
-  messagingSenderId: "556740806720",
-  appId: "1:556740806720:web:c331d473b5ab136da577a5",
-  measurementId: "G-TYNS8J9WER"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+  appId: import.meta.env.VITE_FIREBASE_APP_ID,
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 const app = initializeApp(firebaseConfig);
